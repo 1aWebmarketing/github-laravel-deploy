@@ -38,6 +38,10 @@ You can use the online repository viewer to add the workflow or add it by commit
 
 Check, if your workflow.yml is visible in your repository after committing. It should also be visible in the <code>Actions</code> Tab of your repository.
 
+## References
+
+- <a href="https://github.com/easingthemes/ssh-deploy">ssh-deploy</A> by easingthemes
+
 ## Recommended .gitignore for Laravel
 
 ```
