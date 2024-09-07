@@ -2,32 +2,7 @@
 
 ## Prerequisites
 
-We assume, that you already manage your laravel app in a github repository. When you just start with github we recommend using the GitHub Desktop client and the folling <code>.gitignore</code> List:
-
-```
-**/.DS_Store
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
-.env
-.env.example
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-yarn-error.log
-/.fleet
-/.idea
-/.vscode
-```
+We assume, that you already manage your laravel app in a github repository. When you just start with github we recommend using the GitHub Desktop client.
 
 ## Prepare SSH Keys
 
@@ -62,3 +37,30 @@ You can use the online repository viewer to add the workflow or add it by commit
 ## Thats it
 
 Check, if your workflow.yml is visible in your repository after committing. It should also be visible in the <code>Actions</code> Tab of your repository.
+
+## Recommended .gitignore for Laravel
+
+```
+**/.DS_Store
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.example
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+```
