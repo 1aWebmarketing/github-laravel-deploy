@@ -52,3 +52,5 @@ jobs:
         script: |
           cd ${{ vars.SSH_PATH }}
           php83 artisan about
+          php83 artisan migrate --force
+          php83 artisan optimize

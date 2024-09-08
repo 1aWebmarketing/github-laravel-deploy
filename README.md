@@ -30,6 +30,8 @@ In your repository go to <code>Settings</code> <code>Secrets and variables</code
 | Variable      | SSH_PATH           | Path to the folder, where your compiled laravel app should be copied /www/htdocs/w01f4....
 | Secret        | SSH_PRIVATE_KEY    | Complete content of your private key file, usually starts with something like -----BEGIN RSA PRIVATE KEY-----
 
+**Note** that you cannot see/read/view the <code>Secret Variables</code> after you set them. Keep a copy of your keys when you want to use them for other projects.
+
 ## Adding workflow to github
 
 You can use the online repository viewer to add the workflow or add it by committing the workflow file <code>.github/workflows/nameyourworkflow.yml</code>
