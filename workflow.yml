@@ -62,3 +62,4 @@ jobs:
           php83 artisan about
           php83 artisan migrate --force
           php83 artisan optimize:clear
+          php83 artisan storage:link
