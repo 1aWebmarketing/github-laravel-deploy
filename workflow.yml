@@ -61,7 +61,4 @@ jobs:
           cd ${{ vars.SSH_PATH }}
           php83 artisan about
           php83 artisan migrate --force
-          php83 artisan config:clear
-          php83 artisan route:clear
-          php83 artisan view:clear
-          php83 artisan optimize
+          php83 artisan optimize:clear
