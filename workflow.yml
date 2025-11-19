@@ -62,13 +62,14 @@ jobs:
           fi
 
     - name: Synchronize Files To Server
-      uses: easingthemes/ssh-deploy@v2.1.5
+      uses: easingthemes/ssh-deploy@v5.1.0
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         SOURCE: "."
         REMOTE_HOST: ${{ vars.SSH_HOST }}
         REMOTE_USER: ${{ vars.SSH_USER }}
         TARGET: ${{ vars.SSH_PATH }}
+        EXCLUDE: ".git,.git/**,.github,.github/**"
 
     - name: Run Remote/Artisan Commands
       uses: appleboy/ssh-action@v0.1.6
